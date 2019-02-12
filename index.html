@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Agrimation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+  </head>
+  <body>
+    <div class="Heading">
+      <center>
+        <h2>NISSI Engineering Solution Pvt Ltd</h2>
+        </center>
+    </div>
+
+
+
+
+
+    <div id="userdiv" class="main-div">
+      <center>
+        <h2>Welcome..Please login</h2>
+        <input type="email" name="useremail" placeholder="Enter Your Email ID" id="email-field">
+        <input type="Password" name="userpassword"  placeholder="Enter Your Password" id="pass-field">
+        <button onclick="login()" type="button" name="strbtn">Login to Account</button>
+        </center>
+    </div>
+
+
+
+
+
+    <div id="logindiv" class="Loggedin-div">
+      <h2>Welcome user</h2>
+      <p>Welcome to Controller. You're Curretnly logged In.</p>
+      <button onclick="logout()" type="button" name="Loutbtn">Logout</button>
+
+    </div>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDc_8Qv0uW51p7PBVk-YpMajfWNs1ga1JA",
+        authDomain: "testproject-57e13.firebaseapp.com",
+        databaseURL: "https://testproject-57e13.firebaseio.com",
+        projectId: "testproject-57e13",
+        storageBucket: "testproject-57e13.appspot.com",
+        messagingSenderId: "174309318398"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+
+
+    <script src="index.js"></script>
+
+
+
+  </body>
+</html>
